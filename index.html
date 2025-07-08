@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guru Purnima Greetings</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <div class="floating-elements">
+        <div class="floating-om">ॐ</div>
+        <div class="floating-lotus"><i class="fas fa-lotus"></i></div>
+    </div>
+    
+    <div class="container">
+        <!-- Header Section -->
+        <header class="page-header animate__animated animate__fadeInDown">
+            <div class="header-decoration">
+                <div class="diya left">
+                    <div class="flame"></div>
+                </div>
+                <h1>गुरु पूर्णिमा</h1>
+                <div class="diya right">
+                    <div class="flame"></div>
+                </div>
+            </div>
+            <p class="subtitle">The sacred festival honoring our teachers</p>
+            <div class="header-border"></div>
+        </header>
+        
+        <!-- Main Content -->
+        <main>
+            <!-- Introduction Section -->
+            <section class="intro-section animate__animated animate__fadeIn animate__delay-1s">
+                <div class="om-symbol">ॐ</div>
+                <p class="intro-text">
+                    Guru Purnima is traditionally celebrated to honor one's chosen spiritual teachers. 
+                    On this day, disciples offer puja (worship) to their guru. This sacred day falls on 
+                    the full moon day (Purnima) in the Hindu month of Ashadha (July-August).
+                </p>
+            </section>
+            
+            <!-- Greeting Form Section -->
+            <section class="greeting-form-section animate__animated animate__fadeIn animate__delay-1s">
+                <div class="form-container">
+                    <h2><i class="fas fa-lotus"></i> Receive Your Blessing</h2>
+                    <form id="nameForm" class="greeting-form">
+                        <div class="input-group">
+                            <label for="userName">Enter Your Name:</label>
+                            <input type="text" id="userName" placeholder="Your name" required>
+                            <i class="fas fa-user input-icon"></i>
+                        </div>
+                        <div class="input-group">
+                            <label for="userRole">Your Relationship:</label>
+                            <select id="userRole">
+                                <option value="student">Student</option>
+                                <option value="disciple">Disciple</option>
+                                <option value="seeker">Spiritual Seeker</option>
+                                <option value="devotee">Devotee</option>
+                            </select>
+                            <i class="fas fa-hands-praying input-icon"></i>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-hands-praying"></i> Get Blessing
+                        </button>
+                    </form>
+                </div>
+            </section>
+            
+            <!-- Greeting Display Section -->
+            <section id="greetingDisplay" class="greeting-display-section">
+                <div class="display-card animate__animated">
+                    <div class="lotus-frame">
+                        <div class="greeting-content">
+                            <div class="blessing-icon"><i class="fas fa-hands-praying"></i></div>
+                            <p class="greeting-text"></p>
+                            <p class="user-name"></p>
+                            <p class="user-role"></p>
+                            <div class="signature">- Guru's Blessing -</div>
+                        </div>
+                    </div>
+                    <div class="action-buttons">
+                        <button id="resetBtn" class="reset-btn">
+                            <i class="fas fa-redo"></i> Create Another
+                        </button>
+                        <button id="shareBtn" class="share-btn">
+                            <i class="fas fa-share-alt"></i> Share Blessing
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <!-- Footer Section -->
+        <footer class="page-footer animate__animated animate__fadeInUp animate__delay-1s">
+            <div class="footer-content">
+                <p>May the divine light of the Guru guide you always</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Share on Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Share on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" aria-label="Share on Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Share via Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <p class="copyright">&copy; <span id="currentYear"></span> Guru Purnima Greetings</p>
+        </footer>
+    </div>
+
+    <!-- Confetti Effect Container -->
+    <div id="confetti-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
